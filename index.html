@@ -387,22 +387,25 @@
                 <input class="final-input" type="email" name="email" placeholder="E-mail" required />  
             </label>                        
             <button class="final-button" type="submit" name="subscribe">Subscribe
-                <svg class="plane" width="" height="">
-                    <use href="images/plane with the paper.svg#plane"></use>
+                <svg class="plane" width="24" height="24">
+                    <use href="./images/plane with the paper.svg#plane"></use>
                 </svg>
             </button>
         </form>        
         </div>        
         </div>
-    </footer>  
-         <form class="form">
-            <div class="modal-window">            
-            <div class="modal-container">
-                <button class="form-button" type="submit">Send</button>
-                <p class="form-yazi">Leave your contacts and we will call you back</p>
-                <div class="mc_label-input">
-                <form class="mc-form">
-                    <div class="mc-formdiv">
+    </footer>
+    /--modal-window--/
+    <div class="modal-window">
+        <div class="modal-container">
+            <button class="form-button" type="button">
+                <svg class="form-buttonsvg" width="8" height="8">
+                    <use href="./images/"></use>
+                </svg>
+            </button>            
+            <p class="form-yazi">Leave your contacts and we will call you back</p>
+            <form class="form">                     
+                <div class="mc-formdiv">
                     <label class="label" for="user-name" >
                         Name
                     </label>
@@ -410,60 +413,56 @@
                         <input class="input" id="user-name" type="text" name="user-name" />
                           <svg class="form-ikon" width="18" height="24">
                             <use href="./images/name.svg#name"></use>
-                        </svg>                        
-                    
-                    </div>
-                    <div class="mc-formdiv">
-                        <label class="label" for="phone">
-                            Phone
-                        </label>
-                            <div class="mc-forminput">
-                                <input class="input" id="phone" type="text" name="phone" />
-                                <svg class="form-ikon" width="18" height="24">
-                                    <use href="./images/phone.svg#phone"></use>
-                                </svg>
-                        
-                    </div>
-                    <div class="mc-formdiv">
-                        <label class="label" for="Email">
-                            E-mail
-                        </label>
-                            <div class="mc-forminput">
-                                <input class="input" id="email" type="text" name="email" />
-                                <svg class="form-ikon" width="18" height="24">
-                                    <use href="./images/email.svg#email"></use>
-                                </svg>
-                        
-                    </div>
-                    <div class="mc-formdiv">
+                          </svg>
+                        </div>                      
+                </div>
+
+                <div class="mc-formdiv">
+                    <label class="label" for="phone">
+                         Phone
+                    </label>
+                        <div class="mc-forminput">
+                        <input class="input" id="phone" type="text" name="phone" />
+                            <svg class="form-ikon" width="18" height="24">
+                                <use href="./images/phone.svg#phone"></use>
+                            </svg>                        
+                        </div>
+                </div>
+                <div class="mc-formdiv">
+                    <label class="label" for="Email">
+                        E-mail
+                    </label>
+                        <div class="mc-forminput">
+                        <input class="input" id="email" type="text" name="email" />
+                            <svg class="form-ikon" width="18" height="24">
+                                <use href="./images/email.svg#email"></use>
+                            </svg>
+                        </div>                      
+                </div>
+                <div class="mc-formdiv">
                     <label class="label" for="user-comment" >
                         Comment
                     </label>
                         <div class="mc-forminput">
                         <textarea class="textarea" id="user-comment" type="text" name="user-comment"  placeholder="Text input"></textarea> 
-                    </div>
-
-                    <div class="accept">
-                        <input class="accept-input"  id="user-privacy" type="checkbox" value="true" name="user-privacy" class="visually-hidden" checked/>
-                        <label class="accept-label" for="user-privacy">
-                            I accept the terms and conditions of the
-                            <span class="form-span">Privacy Policy
+                        </div>
+                </div>
+                <div class="accept">
+                    <input class="accept-input"  id="user-privacy" type="checkbox" value="true" name="user-privacy" class="visually-hidden" checked/>
+                    <label class="accept-label" for="user-privacy">
+                        I accept the terms and conditions of the
+                        <span class="form-span">Privacy Policy
                             <svg class="span-ikon" width="10" height="8">
                             <use href="./images/checkbox.svg#checkbox"></use>
                             </svg>
-                            </span>
+                        </span>
                             <a class="baglanti" href="#">Privacy Policy</a>                            
-                        </label>
-                    </div>
-                </div>
-                <button class="button">Send</button>
-                </form>
-                   
-            
-            </div>
-        </div>
-        </div>
-        </form>        
+                    </label>
+                </div>    
+            <button class="button">Send</button>
+            </form>                 
+    </div>
+    </div>
     </main>
 </body>
 

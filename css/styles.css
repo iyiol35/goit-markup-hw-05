@@ -733,6 +733,18 @@ margin-left: 16px;
 .accept{
     margin-bottom: 24px;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    /* Prevent inline elements from wrapping */
+    border: 0;
+}
 .accept-label{
     font-size: 12px;
     line-height: 1.17;

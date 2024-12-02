@@ -600,13 +600,6 @@ border: 1px solid #8E8F99;
 .plane{
 margin-left: 16px;
 }
-.form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-}
 .modal-window{
     display: flex;
     flex-direction: column;
@@ -622,13 +615,8 @@ margin-left: 16px;
     opacity: 1;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.label-input{
-    padding: 20px;
-    border: 1px solid gray;
-}
-.modal-container{
+.modal-container {
     padding: 72px 24px 24px 24px;
-    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -637,7 +625,7 @@ margin-left: 16px;
     min-height: 584px;
     background-color: #fcfcfc;
 }
-.form-button{
+.mc-button{
     position: absolute;
     top: 24;
     right: 24;
@@ -653,12 +641,19 @@ margin-left: 16px;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-button:hover,
-.form-button:focus{
+.mc-button:hover,
+.mc-button:focus{
     background-color: #404bbf;
     border: none;
 }
-.form-yazi{
+.mc-buttonsvg{
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mc-buttonsvg:hover,
+.mc-buttonsvg:focus{
+   fill: #ffffff; 
+}
+.mc-yazi{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -667,8 +662,15 @@ margin-left: 16px;
     color: #2E2F42;
     margin-bottom: 16px;
 }
-.mc-formdiv{
-    margin-bottom: 8px;    
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.mc-formdiv {
+    margin-bottom: 8px;
 }
 .label{
     font-size: 12px;
@@ -680,7 +682,6 @@ margin-left: 16px;
 }
 .mc-forminput{
     position: relative;
-
 }
 .input {
     width: 100%;
@@ -737,6 +738,7 @@ margin-left: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -755,6 +757,7 @@ margin-left: 16px;
     min-width: 169px;
     height: 56px;
     font-family: Roboto, sans sans-serif;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.5em;
     letter-spacing: 0.04em;

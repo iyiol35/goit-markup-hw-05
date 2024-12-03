@@ -762,11 +762,11 @@ margin-left: 16px;
     justify-content: center;
     fill: transparent;    
 }
-/*.accept-input-visuallyhidden:checked +.accept-label >.form-span{
+.accept-input-visuallyhidden:checked +.accept-label >.form-span{
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;    
-}*/
+}
 .baglanti{
     color: #4d5ae5;    
 }

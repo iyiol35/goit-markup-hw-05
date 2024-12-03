@@ -733,7 +733,7 @@ margin-left: 16px;
 .accept{
     margin-bottom: 24px;
 }
-.visually-hidden {
+.accept-input-visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -762,7 +762,7 @@ margin-left: 16px;
     justify-content: center;
     fill: transparent;    
 }
-.accept-input-visually-hidden:checked + .accept-label .form-span{
+.accept-input-visually-hidden:checked + .accept-label> .form-span{
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;    

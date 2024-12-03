@@ -741,8 +741,8 @@ margin-left: 16px;
     margin: -1px;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
+    clip-path: inset(100%);
     white-space: nowrap;
-    /* Prevent inline elements from wrapping */
     border: 0;
 }
 .accept-label{
@@ -762,11 +762,11 @@ margin-left: 16px;
     justify-content: center;
     fill: transparent;    
 }
-/*.accept-input-visuallyhidden:checked +.accept-label >.form-span{
+.accept-input-visuallyhidden:checked +.accept-label >.form-span{
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;    
-}*/
+}
 .baglanti{
     color: #4d5ae5;    
 }
